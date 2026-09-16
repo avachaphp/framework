@@ -11,8 +11,8 @@ class Config {
     public static function load(): void
     {
         static::$debug = env('DEBUG', true);
-        static::$templates_path = env('TEMPLATES', '/templates');
+        static::$templates_path = env('TEMPLATES', '/components');
         static::$assets_url = env('ASSETS_URL', '/assets');
-        static::$templates_cache_path = env('TEMPLATES_CACHE', '/cache/templates');
+        static::$templates_cache_path = env('TEMPLATES_CACHE', '/cache/components');
     }
 }

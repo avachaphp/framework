@@ -9,7 +9,7 @@ use function Avacha\Support\Arrays\array_areduce;
 final class HtmlAttributes
 {
     public function __construct(
-        public private(set) array $list = [],
+        private(set) array $list = [],
     ) {}
 
     public function set(string $attribute, string $value): void

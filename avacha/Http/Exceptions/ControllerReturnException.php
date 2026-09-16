@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Avacha\Http\Exceptions;
 
-use Avacha\Bay\Language\Exceptions\BayException;
+use Avacha\Components\Language\Exceptions\BayException;
 use Throwable;
 
 final class ControllerReturnException extends BayException

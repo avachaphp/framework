@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Avacha\Http;
 
-use function Avacha\Bay\template;
+use function Avacha\Components\render;
 
 class Response
 {
@@ -107,7 +107,7 @@ class Response
         http_response_code($this->status);
 
         if ($this->content === '') {
-            echo template('error', [
+            echo render('avacha/exception', [
                 'status' => $this->status,
                 'text' => self::getStatusText($this->status),
             ]);
