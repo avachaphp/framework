@@ -1,0 +1,22 @@
+<html
+    <head
+        <title = "Avacha Framework | For you, my web wizards!">
+        <link rel="stylesheet" href="/assets/avacha/stylesheet.css">
+    >
+
+    <body
+        <div id="av-base"
+            <div id="av-content"
+                <div id="av-header"
+                    <@avacha/logo>
+                >
+
+                if (! isset($children)) {
+                    <i = "The page is empty">
+                } else {
+                    = eval($children)
+                }
+            >
+        >
+    >
+>

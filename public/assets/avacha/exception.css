@@ -1,0 +1,9 @@
+#av-exception-class {
+    color: var(--text-secondary);
+    font-size: small;
+}
+
+#av-exception-message {
+    font-size: xx-large;
+    margin: 0;
+}

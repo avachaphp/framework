@@ -1,0 +1,8 @@
+<@avacha/base
+    <link rel="stylesheet" href="/assets/avacha/changelog.css">
+    <div id="av-changelog-container"
+        <@avacha/version>
+        <h1 id="av-changelog-message" = "Your framework works.">
+        <p id="av-changelog-submessage" = "Go code!">
+    >
+>

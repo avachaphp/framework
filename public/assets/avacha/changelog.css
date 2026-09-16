@@ -1,0 +1,40 @@
+#av-changelog-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-block-start: 5rem;
+    perspective: 1000px
+}
+
+#av-version {
+    animation: av-changelog-version 2750ms ease-in-out infinite alternate;
+    filter: drop-shadow(0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.2));
+    margin-block-end: 2rem;
+    transition: 400ms ease-out;
+}
+
+#av-version:hover {
+    scale: 1.04;
+}
+
+@keyframes av-changelog-version {
+    from {
+        transform: translateY(-0.5rem) rotateX(8deg);
+    }
+
+    to {
+        transform: translateY(0.5rem) rotateX(15deg);
+    }
+}
+
+#av-changelog-message {
+    font-size: 1.9em;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+#av-changelog-submessage {
+    color: var(--text-secondary);
+    margin-block-start: 0.5rem;
+}

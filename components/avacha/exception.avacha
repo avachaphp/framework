@@ -1,0 +1,8 @@
+<@avacha/base
+    <link rel="stylesheet" href="/assets/avacha/exception.css">
+    <div id="av-exception"
+        <p id="av-exception-class" =$throwable::class>
+        <h1 id="av-exception-message" =$throwable->getMessage()>
+        <pre id="av-exception-stacktrace" =$throwable->getTraceAsString()>
+    >
+>

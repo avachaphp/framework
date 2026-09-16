@@ -1,0 +1,88 @@
+:root {
+    --text-opaque: #070707;
+    --text-secondary: #696969;
+    --text-disabled: #a6a6a6;
+    --border-panels: #cecece;
+}
+
+@font-face {
+    font-family: 'AnkaCoder';
+    src: url('/assets/avacha/fonts/AnkaCoder-r.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AnkaCoder';
+    src: url('/assets/avacha/fonts/AnkaCoder-i.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AnkaCoder';
+    src: url('/assets/avacha/fonts/AnkaCoder-b.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AnkaCoder';
+    src: url('/assets/avacha/fonts/AnkaCoder-bi.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+* {
+    font-family: "AnkaCoder", sans-serif;
+    font-size: clamp(1rem, 1.1vw, 2rem);
+    box-sizing: border-box;
+    transform: translateZ(0);
+    color: var(--text-opaque);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+pre {
+    overflow-x: scroll;
+}
+
+#av-base {
+    min-height: 100vh;
+    padding-inline: 9rem;
+}
+
+#av-content {
+    padding-inline: 2rem;
+    border-inline: var(--border-panels) 1px solid;
+    height: 100%;
+}
+
+#av-header {
+    padding-block: 1rem;
+}
+
+#av-logo {
+    display: flex;
+    align-items: center;
+    column-gap: 0.45rem;
+    font-weight: bold;
+}
+
+#av-logo-img {
+    transform: translateY(+0.05rem);
+    height: 0.65em;
+}
+
+#av-logo-text {
+    line-height: 0.1em;
+    transform: skewX(+4deg);
+    letter-spacing: -0.05em;
+}
